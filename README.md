@@ -4,7 +4,7 @@ Learning Analytics case study examining how students’ online learning engageme
 
 ## Research Question
 
-**How does students’ online learning engagement relate to course outcomes, and when do disengagement patterns emerge among students who fail or withdraw?**
+*How does students’ online learning engagement relate to course outcomes, and when do disengagement patterns emerge among students who fail or withdraw?*
 
 ## Dataset
 
