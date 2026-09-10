@@ -59,7 +59,7 @@ An interactive Tableau dashboard explores:
 - Weekly engagement trajectories
 - Course-level filtering
 
-**Tableau Dashboard:** [Add Tableau Public link]
+**Tableau Dashboard:** [https://public.tableau.com/views/OULADLearningAnalytics/Dashboard1?:language=en-GB&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link]] 
 
 ## Learner-Support Intervention
 
