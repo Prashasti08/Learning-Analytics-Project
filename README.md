@@ -3,7 +3,6 @@
 <p align="center">
   <img src="Learning%20Analytics%20Desk%20Banner.png" alt="Learning Analytics Project Banner" width="100%">
 </p>
-![Learning Analytics Project Banner](banner.png)
 
 # Learning Analytics Project: Student Engagement & Academic Outcomes
 
