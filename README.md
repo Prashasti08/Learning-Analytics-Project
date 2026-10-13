@@ -1,3 +1,6 @@
+
+![Learning Analytics Project Banner](banner.png)
+
 # Learning Analytics Project: Student Engagement & Academic Outcomes
 
 **Python | Tableau | Statistical Analysis | Longitudinal Analysis | A/B Test Design**
