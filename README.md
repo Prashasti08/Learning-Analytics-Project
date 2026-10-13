@@ -1,103 +1,54 @@
-# Learning Analytics
+# Learning Analytics Project: Student Engagement & Academic Outcomes
 
-Learning Analytics case study examining how students’ online learning engagement relates to course outcomes and assessment performance using the Open University Learning Analytics Dataset (OULAD).
+**Python | Tableau | Statistical Analysis | Longitudinal Analysis | A/B Test Design**
+
+Analyzed **32,593 student-course records and 10.6M+ LMS interactions** to examine student engagement, academic performance, and opportunities for early learner-support interventions.
 
 ## Research Question
 
-How does students’ online learning engagement relate to course outcomes, and when do disengagement patterns emerge among students who fail or withdraw?
+How does online learning engagement relate to academic outcomes, and when do disengagement patterns emerge?
 
-## Dataset
+## Business Purpose
 
-Open University Learning Analytics Dataset (OULAD), containing anonymized student demographics, course outcomes, assessments, registrations, and Virtual Learning Environment (VLE) interaction data.
+Identify engagement patterns to inform **early interventions, learner retention, and data-driven learning strategies**.
 
-- 32,593 student-course records
-- 10.6M+ VLE interaction records
-- 7 courses
-- 22 course presentations
+## Methodology
 
-## Tools & Methods
+- **Data Preparation:** Analyzed student records, LMS interactions, assessment scores, and course outcomes using Python.
+- **Statistical Analysis:** Applied descriptive statistics, one-way ANOVA, and Pearson correlation to examine engagement and performance.
+- **Longitudinal Analysis:** Compared weekly engagement patterns across Distinction, Pass, Fail, and Withdrawn students.
+- **Experimental Design:** Proposed an A/B test to evaluate proactive learner-support messages.
 
-**Tools:** Python · Pandas · SciPy · Matplotlib · Tableau
+## Findings
 
-**Methods:** Learning Analytics · Descriptive Statistics · One-Way ANOVA · Pearson Correlation · Longitudinal Engagement Analysis · A/B Test Design
+- **Engagement Differences:** Distinction students averaged 2,667 LMS clicks versus 445 for Withdrawn students; differences across outcome groups were statistically significant (p < .001).
+- **Academic Performance:** Engagement was positively correlated with assessment scores (r = 0.293, p < .001).
+- **Engagement Trends:** Students who failed or withdrew generally showed lower weekly LMS engagement than those who passed or earned distinctions.
 
-## Analysis
+## Key Insights and Recommendations
 
-### 1. Engagement by Course Outcome
+- **Early Intervention:** Identify students with low LMS engagement for targeted learning support.
+- **Personalized Support:** Pilot reminders, study-planning prompts, and relevant course resources.
+- **Impact Evaluation:** Use randomized A/B testing to assess subsequent engagement and assessment completion before scaling interventions.
 
-Average total LMS clicks differed substantially by final outcome:
+## Data Source
 
-| Outcome | Average LMS Clicks |
-|---|---:|
-| Distinction | 2,666.76 |
-| Pass | 1,922.28 |
-| Fail | 688.36 |
-| Withdrawn | 444.82 |
+[Open University Learning Analytics Dataset (OULAD)](https://analyse.kmi.open.ac.uk/open_dataset)
 
-A one-way ANOVA showed a statistically significant difference in engagement across outcome groups (**F = 2526.06, p < .001**).
+Real-world, anonymized educational data covering **7 courses, 22 course presentations, 32,593 student-course records, and 10.6M+ LMS interactions**.
 
-### 2. Engagement & Assessment Performance
+## Code
 
-LMS engagement had a modest positive relationship with average assessment performance:
+- **Python (Pandas, SciPy, Matplotlib):** Data preparation, descriptive statistics, ANOVA, correlation analysis, and longitudinal engagement analysis.
+- **[View Python Analysis — Jupyter Notebook](https://github.com/Prashasti08/oulad-learning-analytics/blob/main/oulad_learning_analytics.ipynb)**
 
-**Pearson r = .293, p < .001**
+## Data Visualizations and Dashboard
 
-Students with higher LMS activity tended to have higher average assessment scores, although this relationship should not be interpreted as causal.
-
-### 3. Engagement Over Time
-
-Weekly engagement trajectories showed that students receiving **Distinction** and **Pass** outcomes generally maintained higher LMS activity than students who **Failed** or **Withdrew**.
-
-Fail and Withdrawn students showed broadly similar weekly engagement patterns, suggesting that low engagement may provide a useful signal for learner-support opportunities.
-
-## Tableau Dashboard
-
-An interactive Tableau dashboard explores:
-
-- LMS engagement by course outcome
-- Assessment performance by course outcome
-- Weekly engagement trajectories
-- Course-level filtering
-
-**Tableau Dashboard:** https://public.tableau.com/views/OULADLearningAnalytics/Dashboard1?:language=en-GB&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
-
-## Learner-Support Intervention
-
-Based on the observed engagement patterns, a potential intervention is an **early engagement support message** for students showing low LMS activity during the early course period.
-
-The message could include:
-
-- upcoming learning activity reminders
-- a short study-planning prompt
-- links to relevant course resources and support
-
-Because the analysis is observational, this intervention is proposed as a hypothesis to test rather than a proven solution.
-
-## A/B Test Design
-
-**Hypothesis:** A proactive support message will improve subsequent engagement among students showing low early-course LMS activity.
-
-**Treatment:** Early engagement support message  
-**Control:** Standard course experience  
-**Primary outcome:** LMS engagement during the following two weeks  
-**Secondary outcome:** Next assessment submission/completion
-
-Eligible low-engagement students would be randomly assigned to treatment or control groups and their subsequent outcomes compared.
-
-## Key Takeaways
-
-- LMS engagement differed significantly across course outcomes.
-- Higher engagement was associated with higher assessment performance.
-- Pass and Distinction students generally maintained higher weekly engagement than Fail and Withdrawn students.
-- Engagement patterns can inform testable learner-support strategies, but the observational analysis does not establish causality.
+- **Tableau:** Interactive dashboard comparing LMS engagement, academic performance, and weekly engagement trends across course outcomes.
+- **[View Interactive Tableau Dashboard](https://public.tableau.com/views/OULADLearningAnalytics/Dashboard1)**
 
 ## Limitations
 
-- LMS clicks are a behavioral proxy for engagement and do not capture the quality of learning.
-- Weekly averages represent students with recorded VLE activity during each week.
-- Average assessment score is an unweighted mean of recorded assessment scores.
-- The analysis identifies associations, not causal relationships.
-
-## Skills Demonstrated
-
-Learning Analytics · Learning Science · Python · Tableau · LMS/VLE Analytics · Statistical Analysis · Learner Engagement · Experimental Design · A/B Testing
+- Observational findings establish associations, not causation.
+- LMS clicks measure activity, not learning quality.
+- The A/B test is proposed, not implemented.
