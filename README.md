@@ -1,4 +1,4 @@
-# OULAD Learning Analytics
+# Learning Analytics
 
 Learning Analytics case study examining how students’ online learning engagement relates to course outcomes and assessment performance using the Open University Learning Analytics Dataset (OULAD).
 
