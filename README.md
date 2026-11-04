@@ -1,9 +1,4 @@
 
-
-<p align="center">
-  <img src="Learning%20Analytics%20Desk%20Banner.png" alt="Learning Analytics Project Banner" width="100%">
-</p>
-
 # Learning Analytics Project: Student Engagement & Academic Outcomes
 
 **Python | Tableau | Statistical Analysis | Longitudinal Analysis | A/B Test Design**
